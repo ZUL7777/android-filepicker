@@ -42,7 +42,6 @@ android {
     }
     allprojects {
         repositories {
-            jcenter()
             google()
         }
     }
