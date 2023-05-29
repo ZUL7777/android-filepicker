@@ -27,6 +27,7 @@ ext {
 android {
     compileSdkVersion 33
     buildToolsVersion '30.0.3'
+    namespace 'com.github.angads25.filepicker'
 
     defaultConfig {
         minSdkVersion 14
@@ -49,8 +50,8 @@ android {
         abortOnError false
     }
     compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
+        sourceCompatibility = 17
+        targetCompatibility = 17
     }
 
 }
