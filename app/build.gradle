@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion '30.0.3'
+    compileSdk 34
+    buildToolsVersion '34.0.0'
 
     defaultConfig {
         applicationId "com.github.angads25.filepickerdemo"
