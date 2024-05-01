@@ -46,6 +46,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.annotation.Keep;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -57,6 +58,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * </p>
  */
 
+@Keep
 public class FilePickerDialog extends Dialog implements OnItemClickListener {
     private static final int EXTERNAL_READ_PERMISSION_GRANT = 112;
     private Context context;

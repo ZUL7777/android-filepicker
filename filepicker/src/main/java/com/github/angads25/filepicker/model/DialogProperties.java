@@ -16,6 +16,8 @@
 
 package com.github.angads25.filepicker.model;
 
+import androidx.annotation.Keep;
+
 import java.io.File;
 
 /**<p>
@@ -26,6 +28,7 @@ import java.io.File;
 /*  Descriptor class to define properties of the Dialog. Actions are performed upon
  *  these Properties
  */
+@Keep
 public class DialogProperties {
     /** Selection Mode defines whether a single of multiple Files/Directories
      *  have to be selected.

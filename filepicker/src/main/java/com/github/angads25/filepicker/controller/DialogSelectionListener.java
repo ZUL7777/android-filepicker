@@ -21,10 +21,13 @@ package com.github.angads25.filepicker.controller;
  * </p>
  */
 
+import androidx.annotation.Keep;
+
 /**
  * Interface definition for a callback to be invoked
  * when dialog selects files.
  */
+@Keep
 public interface DialogSelectionListener {
 
     /**
