@@ -25,7 +25,7 @@ ext {
 }
 
 android {
-    compileSdk 34
+    compileSdk 35
     buildToolsVersion = '34.0.0'
     namespace 'com.github.angads25.filepicker'
 
