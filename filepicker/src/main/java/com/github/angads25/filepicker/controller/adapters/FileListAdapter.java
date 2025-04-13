@@ -85,9 +85,9 @@ public class FileListAdapter extends RecyclerView.Adapter<FileListAdapter.ViewHo
         if (item.isDirectory()) {
             holder.type_icon.setImageResource(R.mipmap.ic_type_folder);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                holder.type_icon.setColorFilter(context.getResources().getColor(R.color.colorPrimary, context.getTheme()));
+                holder.type_icon.setColorFilter(context.getResources().getColor(R.color.iconColorPrimary, context.getTheme()));
             } else {
-                holder.type_icon.setColorFilter(context.getResources().getColor(R.color.colorPrimary));
+                holder.type_icon.setColorFilter(context.getResources().getColor(R.color.iconColorPrimary));
             }
             if (properties.selection_type == DialogConfigs.FILE_SELECT) {
                 holder.fmark.setVisibility(View.INVISIBLE);

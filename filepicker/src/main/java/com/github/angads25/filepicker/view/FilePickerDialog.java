@@ -26,11 +26,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.github.angads25.filepicker.R;
 import com.github.angads25.filepicker.controller.DialogSelectionListener;
-import com.github.angads25.filepicker.controller.NotifyItemChecked;
 import com.github.angads25.filepicker.controller.adapters.FileListAdapter;
 import com.github.angads25.filepicker.controller.interfaces.OnItemClickListener;
 import com.github.angads25.filepicker.model.DialogConfigs;
@@ -105,6 +105,15 @@ public class FilePickerDialog extends Dialog implements OnItemClickListener {
         setContentView(R.layout.dialog_main);
         listView = findViewById(R.id.fileList);
         listView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        ImageView imageDirectoryParent = findViewById(R.id.image_directory_parent);
+        if (imageDirectoryParent != null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                imageDirectoryParent.setColorFilter(context.getResources().getColor(R.color.iconColorPrimary, context.getTheme()));
+            } else {
+                imageDirectoryParent.setColorFilter(context.getResources().getColor(R.color.iconColorPrimary));
+            }
+        }
 
         select = findViewById(R.id.select);
         int size = MarkedItemList.getFileCount();
