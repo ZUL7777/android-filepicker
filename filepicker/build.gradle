@@ -25,20 +25,20 @@ ext {
 }
 
 android {
-    compileSdk 35
+    compileSdkVersion 36
     buildToolsVersion = '36.0.0'
     namespace 'com.github.angads25.filepicker'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 35
+        targetSdkVersion 36
         versionCode 12
         versionName "1.1.1"
     }
     buildTypes {
         release {
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     allprojects {
@@ -65,5 +65,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'androidx.recyclerview:recyclerview:1.4.0'
     implementation 'androidx.preference:preference:1.2.1'
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.13'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
 }
